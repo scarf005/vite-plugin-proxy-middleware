@@ -15,7 +15,7 @@ interface userOptsType {
   publicHost?: string;
 }
 
-export type proxyTableType = Record<"string", ProxyOptions> | string;
+export type proxyTableType = Record<string, ProxyOptions> | string;
 
 function VitePluginProxyMiddleware(opts: userOptsType): Plugin {
   let config: ResolvedConfig;
